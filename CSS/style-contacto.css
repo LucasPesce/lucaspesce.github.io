@@ -1,0 +1,128 @@
+/*CONFIGURACIONES GENERALES*/
+body{
+    background-color: #131313;
+    color: white;
+    font-family: 'Radio Canada', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #c970c1;
+}
+main{
+    position: relative;
+    top: 250px;
+    bottom: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    line-height : 35px;
+}
+/*BOTON VOLVER*/
+#botonVolver{
+    font-weight: 600;
+    font-size: 25px;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 85%;
+    z-index: 100;
+}
+
+/*CONTACTO*/
+#titulo{
+    font-size: 120px;
+    line-height : 120px;
+    text-align:start;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#sub-titulo{
+    font-size: 40px;
+    line-height : 60px;
+    text-align:start;
+    margin-bottom: 50px
+}
+
+.parrafo{
+    font-size: 24px;
+    line-height : 40px;
+    font-weight: 300;
+}
+ul{
+    list-style: none;
+    color:#c970c1;
+    font-size: 26px;
+    line-height : 80px;
+    font-weight: 300;
+    margin-bottom: 500px;
+}
+li{
+    font-weight: bold;
+}
+
+/*              RESPONSIVE - TABLET             */
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    main{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    /*BOTON VOLVER*/
+    #botonVolver{
+        font-size: 20px;
+        left: 70%;
+        top: 50px;
+    }
+    #titulo{
+        font-size: 80px;
+        text-align:center;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    #sub-titulo{
+        font-size: 40px;
+    }
+    .parrafo{
+        font-size: 20px;
+        line-height : 35px;
+    }
+    ul{
+        font-size: 20px;
+        line-height : 60px;
+    }
+}
+
+/*              RESPONSIVE - MOBIL             */
+@media screen and (max-width: 767px)
+{
+    main{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*BOTON VOLVER*/
+    #botonVolver{
+        font-size: 20px;
+        left: 70%;
+        top: 50px;
+    }
+    #titulo{
+        font-size: 50px;
+        line-height : 50px;
+        text-align:center;
+        margin-top: 100px;
+        margin-bottom: 125px;
+    }
+    #sub-titulo{
+        font-size: 35px;
+    }
+    .parrafo{
+        font-size: 20px;
+        line-height : 30px;
+    }
+    ul{
+        font-size: 18px;
+        line-height : 50px;
+    }    
+}

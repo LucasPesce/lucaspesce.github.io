@@ -1,0 +1,150 @@
+body{
+    background-color: #131313;
+}
+/* CONFIGURACION DE LA FOTO */
+.FotoPerfil{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    height: 100%;
+    z-index: -10;
+}
+/* TOCA LA PANTALLA */
+    #tocaPantalla {
+        position: fixed;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        opacity: 0;
+        animation: fade-in 1s forwards;
+      }
+      
+      #tocaPantalla p {
+        color: #fff;
+        font-family: 'Radio Canada', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+      }
+      
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+/*  CONFIGURACION DEL PANEL DE NAVEGACION   */
+.PanelNav{
+    position: relative;
+    text-align: left;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 150px;
+    font-weight: 600;
+    letter-spacing: -10px;
+    left: 20%;
+    top: 100px;
+}
+
+[data-original="Hola."] {
+    color: white;
+    text-decoration: none; 
+    cursor: pointer;
+}
+[data-original="Hola."]:Hover {
+    margin-left: 40px;
+	transition: .4s;	
+}
+
+
+[data-original="Soy"] {
+    color: #c970c1;
+    text-decoration: none;
+    cursor: pointer;
+}
+[data-original="Soy"]:Hover {
+    margin-left: 40px;
+	transition: .4s;
+}
+
+
+[data-original="Luc Pesce"] {
+    color: #c970c1;
+    text-decoration: none;
+    cursor: pointer;
+}
+[data-original="Luc Pesce"]:Hover{
+    margin-left: 40px;
+	transition: .4s;   
+}
+@media screen and (max-width: 1023px){
+/*Anular Animaciones - en moviles*/
+    [data-original="Hola."]:Hover{
+      margin-left: 0px;
+  }
+  [data-original="Soy"]:Hover{
+      margin-left: 0px;
+  }
+  [data-original="Luc Pesce"]:Hover{
+      margin-left: 0px;
+}
+}
+
+
+
+/*              RESPONSIVE - TABLET             */
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    #tocaPantalla {
+        top: 20px;
+    }
+    /*Panel de Navegacion*/
+    .PanelNav{
+        font-size: 120px;
+        left: 15%;
+        top: 150px;
+    }   
+    /*Configuracion de la fotografia*/
+        .FotoPerfil{
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);;
+        }
+}
+
+
+/*              RESPONSIVE - MOBIL             */
+@media screen and (max-width: 767px)
+{
+    /*Configuracion de la fotografia*/
+    .FotoPerfil{
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /*Panel de Navegacion*/
+    .PanelNav{
+        position: relative;
+        font-size: 75px;
+        left: 5%;
+        top: 150px;
+        letter-spacing: -5px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    } 
+    [data-original="Hola."]{
+        -webkit-text-stroke: 1px #131313;
+    }
+    [data-original="Soy"]{
+        -webkit-text-stroke: 1px #131313;
+    }
+    [data-original="Luc Pesce"]{
+        -webkit-text-stroke: 1px #131313;
+    }              
+}

@@ -1,0 +1,432 @@
+/*CONFIGURACIONES GENERALES*/
+body{
+    background-color: #131313;
+    color: white;
+    font-family: 'Radio Canada', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #c970c1;
+}
+main{
+    position: relative;
+    top: 250px;
+    bottom: 250px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    line-height : 35px;
+}
+
+
+/*BOTON VOLVER*/
+#botonVolver{
+    font-weight: 600;
+    font-size: 25px;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 85%;
+    z-index: 100;
+}
+
+/*BIOGRAFIA*/
+#titulo{
+    font-size: 60px;
+    line-height : 60px;
+    text-align:center;
+    margin-top: 100px;
+    margin-bottom: 125px;
+}
+
+.foto{
+    width: 500px;
+    float: left;
+    right: 0%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.subtituloBiografia{
+    font-size: 28px;
+    line-height : 40px;
+    font-weight: 600;
+}
+
+.parrafoBiografia{
+    font-size: 24px;
+    line-height : 40px;
+    font-weight: 300;
+}
+
+/*SKILLS*/
+.skills{
+    padding: 50px 0 50px 0;
+}
+.skills .container{
+    max-width: 1500px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 30px;
+}
+.skills .fila .col h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #3b253a;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #bd2c7c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+/* SKILLS ANIMACIONES */
+.skills .skill .Ilustrator{
+    width: 0%;
+    animation: 2s Ilustrator forwards;
+}
+@keyframes Ilustrator {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .Photoshop{
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+@keyframes Photoshop {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .HTMLyCSS{
+    width: 0%;
+    animation: 2s HTMLyCSS forwards;
+}
+@keyframes HTMLyCSS {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .JavaScript{
+    width: 0%;
+    animation: 2s JavaScript forwards;
+}
+@keyframes JavaScript {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .TypeScript{
+    width: 0%;
+    animation: 2s TypeScript forwards;
+}
+@keyframes TypeScript {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+
+.skills .skill .Ingles{
+    width: 0%;
+    animation: 2s Ingles forwards;
+}
+@keyframes Ingles {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .Autodidacta{
+    width: 0%;
+    animation: 2s Autodidacta forwards;
+}
+@keyframes Autodidacta {
+    0%{width: 0%;}
+    100%{width: 98%;}
+}
+
+.skills .skill .TrabajoEnEquipo{
+    width: 0%;
+    animation: 2s TrabajoEnEquipo forwards;
+}
+@keyframes TrabajoEnEquipo {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+@keyframes Creatividad {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .Adaptabilidad{
+    width: 0%;
+    animation: 2s Adaptabilidad forwards;
+}
+@keyframes Adaptabilidad {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+/*FORMACION*/
+.Formacion{
+    padding: 50px 20px;
+}
+.Formacion .container{
+    max-width: 1100px;
+    margin: auto;
+}
+.Formacion h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.Formacion .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.Formacion .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.Formacion .fila .col h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.Formacion .fila .izquierda{
+    border-right: 2px solid #9b2566;
+}
+.Formacion .fila .derecha{
+    border-left: 2px solid #9b2566;
+}
+.Formacion .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252525;
+    position: relative;
+}
+.Formacion .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Formacion .fila .item .casa{
+    color: #c970c1;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.Formacion .fila .item .fecha{
+    display: block;
+    color: #c970c1;
+    margin-bottom: 10px;
+}
+.Formacion .fila .item p{
+    line-height: 24px;
+}
+.Formacion .fila .izq{
+    border-right: 2px solid #9b2566;
+    margin-right: 20px;
+}
+.Formacion .fila .der{
+    border-left: 2px solid #9b2566;
+    margin-left: 20px;
+}
+
+
+
+/*              RESPONSIVE - TABLET             */
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    main{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    /*BOTON VOLVER*/
+    #botonVolver{
+        font-size: 20px;
+        left: 70%;
+        top: 50px;
+    }
+    /*BIOGRAFIA*/
+    #titulo{
+        font-size: 40px;
+        text-align:center;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .foto{
+        width: 100%;
+        float: left;
+        right: 0%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .subtituloBiografia{
+        font-size: 22px;
+        line-height : 35px;
+    }
+    .parrafoBiografia{
+        font-size: 20px;
+        line-height : 35px;
+    }
+
+    /*SKILLS*/
+    .skills h2{
+        font-size: 40px;    
+    }
+    .skills .fila .col h3{
+        font-size: 25px;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 90%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 90%;
+    }
+
+    /*FORMACION*/
+    .Formacion h2{
+        font-size: 40px;
+    }
+    .Formacion .fila .col h3{
+        font-size: 30px;
+    }
+    .Formacion .fila .item h4{
+        font-size: 20px;
+    }
+    .Formacion .fila .izquierda{
+        border-right: 2px solid #9b2566;
+    }
+    .Formacion .fila .derecha{
+        border-left: 2px solid #9b2566;
+    }
+    .Formacion .fila .item .casa{
+        font-size: 18px;
+    }
+    .Formacion .fila{
+        display: block;
+    }
+    .Formacion .fila .col{
+        width: 90%;
+    }
+    .Formacion .fila .derecha{
+        margin-left: 20px;
+    }  
+}
+
+
+/*              RESPONSIVE - MOBIL             */
+@media screen and (max-width: 767px)
+{
+    main{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*BOTON VOLVER*/
+    #botonVolver{
+        font-size: 20px;
+        left: 70%;
+        top: 50px;
+    }
+    /*BIOGRAFIA*/
+    #titulo{
+        font-size: 40px;
+        text-align:center;
+        margin-top: 100px;
+        margin-bottom: 125px;
+    }
+    .foto{
+        width: 100%;
+        float: left;
+        right: 0%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .subtituloBiografia{
+        font-size: 22px;
+        line-height : 35px;
+    }
+    .parrafoBiografia{
+        font-size: 20px;
+        line-height : 35px;
+    }
+
+    /*SKILLS*/
+    .skills h2{
+        font-size: 40px;    
+    }
+    .skills .fila .col h3{
+        font-size: 25px;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 90%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 90%;
+    }
+
+    /*FORMACION*/
+    .Formacion h2{
+        font-size: 40px;
+    }
+    .Formacion .fila .col h3{
+        font-size: 30px;
+    }
+    .Formacion .fila .item h4{
+        font-size: 20px;
+    }
+    .Formacion .fila .izquierda{
+        border-right: 2px solid #9b2566;
+    }
+    .Formacion .fila .derecha{
+        border-left: 2px solid #9b2566;
+    }
+    .Formacion .fila .item .casa{
+        font-size: 18px;
+    }
+    .Formacion .fila{
+        display: block;
+    }
+    .Formacion .fila .col{
+        width: 90%;
+    }
+    .Formacion .fila .derecha{
+        margin-left: 20px;
+    }   
+}
