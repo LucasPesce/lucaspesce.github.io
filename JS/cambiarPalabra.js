@@ -12,11 +12,11 @@ function volverPalabra(event) {
 function getPalabraReemplazo(palabraOriginal) {
     switch (palabraOriginal) {
       case "Hola.":
-        return "Sobre Mí";
+        return "Conóceme";
       case "Soy":
-        return "Trabajos";
+        return "Descúbreme";
       case "Luc Pesce":
-        return "Contacto";       
+        return "Contactemos";       
       default: break;
     }
 }
